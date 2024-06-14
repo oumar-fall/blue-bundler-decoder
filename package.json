@@ -1,0 +1,13 @@
+{
+  "name": "blue-bundler-decoder",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@morpho-org/morpho-blue-bundlers": "^1.1.0"
+  },
+  "scripts": {
+    "decode": "node decode.js"
+  }
+}
