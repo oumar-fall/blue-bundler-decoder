@@ -52,7 +52,7 @@ try {
     fs.mkdirSync("output");
   }
 
-  if (process.argv[process.argv.length - 1] === "--simple") {
+  if (process.argv.includes("--simple")) {
     res = res.map((r) => r && { name: r.name, args: r.args });
   }
 

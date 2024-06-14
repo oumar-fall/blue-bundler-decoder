@@ -1,24 +1,40 @@
 # blue-bundler-decoder
 
+A utility package to decode call data sent to Morpho Blue's bundler.
+
+## Installation
+
+Install the dependencies using yarn:
+
+```bash
+yarn install
+```
+
+## Usage
+
+To decode a single call data:
+
 ```bash
 yarn decode [data]
 ```
 
-or
+To decode individual calls obtained after manually decoding the calldata of `multicall`:
 
 ```bash
 yarn decode [call1] [call2] [call3] ...
 ```
 
-exemple:
+### Example
+
+Decode a single call data:
 
 ```bash
 yarn decode 0xac9650d800000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000e41af3bbc6000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec70000000000000000000000009d39a5de30e57443bff2a8307a4256c8797a3497000000000000000000000000e47e36457d0cf83a74ae1e45382b7a044f7abd99000000000000000000000000870ac11d48b15db9a138cf899d20f13f79ba00bc0000000000000000000000000000000000000000000000000cb2bba6f17b800000000000000000000000000000000000000000000000024df43d9935dec9be8100000000000000000000000036dfe6eddef7d32497e15cdf826d6cf4ee9293af00000000000000000000000000000000000000000000000000000000
 ```
 
-## Simple
+### Simple Mode
 
-add the `--simple` flag **in the end** to only have function name and args:
+Add the `--simple` flag at the end to only display function names and arguments:
 
 ```bash
 yarn decode [data] --simple
@@ -26,4 +42,4 @@ yarn decode [data] --simple
 
 ## Output
 
-Output will be available in `output/` directory
+The decoded output will be available in the `output/` directory.
